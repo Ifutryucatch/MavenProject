@@ -33,7 +33,7 @@ public class ApiPrevoznikController {
 	private PrevoznikDTOToPrevoznik toPrevoznik;
 	
 	@RequestMapping(method=RequestMethod.GET)
-	ResponseEntity<List<PrevoznikDTO>> getPrevoznici(
+	public ResponseEntity<List<PrevoznikDTO>> getPrevoznici(
 			@RequestParam(value="pageNum", defaultValue="0") int pageNum){
 		
 		List<Prevoznik> prevozniciList = null;
