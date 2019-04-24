@@ -177,9 +177,7 @@ stanicaApp.controller("editLinijaCtrl", function($scope, $http, $routeParams, $l
 			}
 		);
 	}
-	//Ako bismo želeli da radimo kaskadiranje radi omogućavanja ng-selected odabira prevoznika,
-	//onda bismo ovo morali da prebacimo u success callback pod getPrevoznici. Tu je izostavljen
-	//taj mehanizam radi jednostavnosti.
+
 	getLinija();
 	
 	
